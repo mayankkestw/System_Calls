@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<unistd.h>
+#include<fcntl.h>
+int main(){
+  char a[15];
+  int n = open("os.txt",O_RDWR,0777);
+  int c = read(n,a,15);
+  printf("\nNo. of characters : %d\n",c);
+  
+ // int w = write(n," System",5);
+ // printf("Written characters : %d",w);
+  int p = lseek(n,,SEEK_SET);
+  printf("\n%c\n",p);
+  write(1,a,1);
+}
