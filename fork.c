@@ -8,6 +8,6 @@ int main(){
   printf("Parent program ends %d\n",p);
   }
   else{
-  printf("Parent ends %d\n",p);
+  printf("Child ends %d\n",p);
 }
 }

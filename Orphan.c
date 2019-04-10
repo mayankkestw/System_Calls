@@ -11,7 +11,7 @@ int main(){
   else if(p==0){
     sleep(10);
     printf("parent of child id %d",getppid());
-    printf("Orphan\n");
+    printf("\nOrphan\n");
   }else{
     printf("error");
   }
